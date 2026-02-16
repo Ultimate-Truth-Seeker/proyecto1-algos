@@ -1,0 +1,12 @@
+states: q0,q1,q2,q_accept
+input_symbols: 1
+tape_symbols: 1,X,B
+start_state: q0
+blank_symbol: B
+accept_states: q_accept
+
+transitions:
+q0,1 -> q1,X,R
+q1,1 -> q1,1,R
+q1,B -> q2,1,L
+q2,X -> q_accept,X,R
