@@ -3,7 +3,7 @@ import numpy as np
 import time
 from turingmachine import TuringMachine
 
-sizes = [2,3,4,5,6,7]
+sizes = list(range(12))
 times = []
 
 tm = TuringMachine("maquina.txt")

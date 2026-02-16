@@ -64,6 +64,8 @@ class TuringMachine:
                 head += 1
             elif move == "L":
                 head -= 1
+            elif move == "N":
+                pass
 
             state = new_state
             steps += 1
@@ -73,5 +75,5 @@ class TuringMachine:
                 print("".join(tape))
                 print(" " * head + "^")
                 print("-" * 40)
-
+        print(tape)
         return steps
